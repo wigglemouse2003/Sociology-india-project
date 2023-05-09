@@ -1,0 +1,43 @@
+.page-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 100px;
+
+
+    .page-background-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: calc(100vw - 17px);
+        height: 500px;
+        box-shadow: inset -0px -80px 50px -60px rgba(50, 25, 0, 0.85);
+
+        h1 {
+            font-size: 3em;
+            color: #b8923f;
+            -webkit-text-stroke: .5px black;
+        }
+    }
+
+    .content {
+        display: flex;
+        .left {
+            width: 100px;
+            height: 98vh;
+            background-color: $lightOrange;
+            position: absolute;
+        }
+        .right {
+            width: 100px;
+            height: 98vh;
+            background-color: $lightOrange;
+            position: absolute;
+            left: calc(100vw - 117px);
+        }
+        p, ul {
+            text-indent: 40px;
+            margin: 25px 200px;
+        }
+    }
+}

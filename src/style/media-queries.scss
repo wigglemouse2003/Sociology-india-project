@@ -1,0 +1,144 @@
+@media (max-width: 615px) and (orientation: portrait) {
+
+    // nav bar
+    .nav-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+        width: 100vw;
+
+        .left-side {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 0px 15px 15px;
+            border-bottom: 1px solid $grey;
+
+            .nav-link-wrapper {
+                margin: 0px;
+            }
+        }
+
+        .right-side {
+            padding: 10px;
+            margin-top: 15px;
+
+        }
+    }
+
+    // home
+    .homepage-wrapper {
+        height: calc(100vh - 228px);
+
+        .homepage {
+            .home-block {
+                height: 150px;
+                padding: 10px;
+                width: calc(100vw - 20px);
+
+                h1 {
+                    font-size: 3em;
+                }
+            }
+
+            .welcome-text {
+                height: 70px;
+                padding: 40px;
+
+                p {
+                    margin-top: -50px;
+                    font-size: 0.75em;
+                }
+            }
+        }
+    }
+
+    // portfolio
+    .portfolio-item-wrapper {
+        height: 150px;
+        font-size: 0.75em;
+
+        .img-text-wrapper {
+            padding-left: 0px;
+            padding-right: 0px;
+            height: 50px;
+        }
+
+        .logo-wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            img {
+                width: 75%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    // blog
+    .blog-container {
+        .content-container {
+            width: 400px;
+        }
+    }
+}
+
+@media (max-width: 615px) and (orientation: landscape) {
+
+    // nav bar
+    .nav-wrapper {
+        .left-side {
+            .nav-link-wrapper {
+                font-size: .75rem;
+                margin-right: 10px;
+            }
+        }
+
+        .right-side {
+
+            p,
+            a {
+                font-size: 0.85em;
+            }
+        }
+    }
+
+    // home
+    .homepage-wrapper {
+        height: calc(228px + 170px);
+    }
+}
+
+@media (max-width: 680px) {
+
+    // nav bar
+    .nav-wrapper {
+        .right-side {
+            p {
+                width: 70px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+
+    // about / contact
+    .content-page-wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 100vw;
+
+        .left-column {
+            height: $box;
+        }
+
+        .right-column {
+            padding: 100px 50px 100px 50px;
+        }
+    }
+}
